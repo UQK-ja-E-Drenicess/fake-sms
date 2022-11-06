@@ -17,21 +17,17 @@ CNC='\033[1;38;5;051m'
 
 function banner(){  
 echo -e ${RED}""                                                 
-echo -e ${RED}"     █████▒▄▄▄       ██ ▄█▀▓█████      ██████  ███▄ ▄███▓  ██████"
-echo -e ${RED}"   ▓██   ▒▒████▄     ██▄█▒ ▓█   ▀    ▒██    ▒ ▓██▒▀█▀ ██▒▒██    ▒ "
-echo -e ${RED}"   ▒████ ░▒██  ▀█▄  ▓███▄░ ▒███      ░ ▓██▄   ▓██    ▓██░░ ▓██▄"
-echo -e ${RED}"   ░▓█▒  ░░██▄▄▄▄██ ▓██ █▄ ▒▓█  ▄      ▒   ██▒▒██    ▒██   ▒   ██▒"
-echo -e ${RED}"   ░▒█░    ▓█   ▓██▒▒██▒ █▄░▒████▒   ▒██████▒▒▒██▒   ░██▒▒██████▒▒"
-echo -e ${RED}"   ▒ ░    ▒▒   ▓▒█░▒ ▒▒ ▓▒░░ ▒░ ░   ▒ ▒▓▒ ▒ ░░ ▒░   ░  ░▒ ▒▓▒ ▒ ░"
-echo -e ${RED}"   ░       ▒   ▒▒ ░░ ░▒ ▒░ ░ ░  ░   ░ ░▒  ░ ░░  ░      ░░ ░▒  ░ ░"
-echo -e ${RED}"   ░ ░     ░   ▒   ░ ░░ ░    ░      ░  ░  ░  ░      ░   ░  ░  ░"
-echo -e ${RED}"               ░   ░  ░      ░  ░         ░         ░         ░"    
-echo -e ${RED}"                   ░"
+echo -e ${RED}"   ███████╗███╗   ███╗███████╗      ███████╗███████╗███╗   ██╗██████╗ ███████╗██████╗ "
+echo -e ${RED}"   ██╔════╝████╗ ████║██╔════╝      ██╔════╝██╔════╝████╗  ██║██╔══██╗██╔════╝██╔══██╗"
+echo -e ${RED}"   ███████╗██╔████╔██║███████╗█████╗███████╗█████╗  ██╔██╗ ██║██║  ██║█████╗  ██████╔╝"
+echo -e ${RED}"   ╚════██║██║╚██╔╝██║╚════██║╚════╝╚════██║██╔══╝  ██║╚██╗██║██║  ██║██╔══╝  ██╔══██╗"
+echo -e ${RED}"   ███████║██║ ╚═╝ ██║███████║      ███████║███████╗██║ ╚████║██████╔╝███████╗██║  ██║"
+echo -e ${RED}"   ╚══════╝╚═╝     ╚═╝╚══════╝      ╚══════╝╚══════╝╚═╝  ╚═══╝╚═════╝ ╚══════╝╚═╝  ╚═╝"
+echo -e ${RED}"                                                                                      "
 echo -e ${RED}""                                              
-echo -e ${RED}" [${NC}-${RED}]${BLUE} Tool Created by k46_db0y (k46 db0y)"
+echo -e ${RED}" [${NC}-${RED}]${BLUE} Tool Created by Alb[E]rTTz"
 echo -e ${BlUE}""
-echo -e ${RED}" [${NC}-${RED}]${GREEN} https://github.com/k46_db0y"
-echo -e ${RED}" [${NC}-${RED}]${GREEN} https://discord.gg/db0y"
+echo -e ${RED}" [${NC}-${RED}]${GREEN} https://github.com/UQK-ja-E-Drenicess"
 
 }
 resize -s 38 70 > /dev/null
@@ -43,7 +39,7 @@ cat /etc/issue.net
 echo " Checking dependencies configuration " 
 sleep 1
 if [[ "$(ping -c 1 8.8.8.8 | grep '100% packet loss' )" != "" ]]; then
-  echo ${RED}" No Internet Connection"
+  echo ${RED}" Nuk ka lidhje interneti"
   exit 1
   else
   echo -e ${GREEN} "\n[ ✔ ] Internet.............${GREEN}[ working ]"
@@ -75,25 +71,25 @@ sleep 1
 }
 
 function printmsg(){
-echo  -e ${RED}" Exiting FAKE-SMS SENDER... "
+echo  -e ${RED}" Ju po dilni nga DËRGUESI FAKE-SMS... "
 sleep 1
-echo -e ${ORANGE}" See You Next Time............."
+echo -e ${ORANGE}" Shihemi heren tjeter!............."
 exit
 }
 
 function instruction(){
 
-echo -e ${YELLOW}"\n 1. Your Country Code Must Be without "+"\n"
+echo -e ${YELLOW}"\n 1. Kodi juaj i shtetit duhet të jetë pa "+"\n"
 sleep 0.5
-echo -e ${BLUE}" 2. Country Code Example: 92\n"
+echo -e ${BLUE}" 2. Shembull Kodi i Shtetit: 92\n"
 sleep 0.5
-echo -e ${ORANGE}" 3. Your Phone Number Must be Start Without 0\n"
+echo -e ${ORANGE}" 3. Numri juaj i telefonit duhet të fillojë pa 0\n"
 sleep 0.5
-echo -e ${CNC}" 4. Full Usage: 923443210111\n"
+echo -e ${CNC}" 4. Shembull përdorimi i plotë: 923443210111\n"
 sleep 0.5
-echo -e ${RED}"  ..........NOTE: Only One Text Message Is Allowed Per Day...........\n"
+echo -e ${RED}"  ..........NOTE: Lejohet vetëm një mesazh me tekst në ditë...........\n"
 sleep 0.5
-echo -e -n ${BLUE}"\n Back to SENDSMS OPTION: [y/n]:${NC} "
+echo -e -n ${BLUE}"\n Kthehu te OPSIONI SENDSMS: [y/n]:${NC} "
 read back_press
 if [ $back_press = "y"  ]; then
          SENDSMS
@@ -108,13 +104,13 @@ function SENDSMS() {
     clear
     banner
     echo ""
-   echo -e ${ORANGE}" Enter Phone Number with County Code like (923441212012)\n"
-   echo -e -n ${CP}" Enter Phone Number With Country Code:${NC} "
+   echo -e ${ORANGE}" Shkruani Numrin e Telefonit me kodin e shtetit psh (923441212012)\n"
+   echo -e -n ${CP}" Shkruani Numrin e Telefonit me kodin e shtetit:${NC} "
    
    read num
    
    echo "  "
-   echo -e -n ${BLUE}" Enter Your Message:${NC} "
+   echo -e -n ${BLUE}" Shkruaj mesazhin:${NC} "
    
    read msg
 
@@ -126,7 +122,7 @@ function SENDSMS() {
    then
       
       echo "  "
-      echo -e ${CNC}" .....SUCCESS "
+      echo -e ${CNC}" .....Sukses "
       echo "  "
       echo -e ${CNC}" ---------------------------------------------- "
       echo "$SMSVERIFY"
@@ -136,7 +132,7 @@ function SENDSMS() {
    else
       
       echo "  "
-      echo -e ${RED}" FAIL "
+      echo -e ${RED}" Deshtoi "
       echo "  "
       echo -e ${CNC}" ---------------------------------------------- "
       echo "$SMSVERIFY"
@@ -146,10 +142,10 @@ function SENDSMS() {
    fi
 }
 function STATUSCHECK(){
-echo -e -n ${ORANGE}"\n Enter Text ID (e.g 123456):${NC} "
+echo -e -n ${ORANGE}"\n Shkruaj id'n e Textit (psh 123456):${NC} "
 read ID
 STATUSCONFIRM=$(curl -# https://textbelt.com/status/"$ID")
-echo -e ${PINK}" Final Response (JSON): "
+echo -e ${PINK}" Përgjigja përfundimtare (JSON): "
    echo " "
    echo -e ${PINK}" ---------------------------------------------- $NC"
    echo "$STATUSCONFIRM"
@@ -158,11 +154,11 @@ echo -e ${PINK}" Final Response (JSON): "
 trap ctrl_c INT
 ctrl_c() {
 clear
-echo -e ${RED}" [*] (Ctrl + C ) Detected, Trying To Exit... "
-echo -e ${RED}" [*] Stopping Services... "
+echo -e ${RED}" [*] (Ctrl + C ) U zbulua, duke u përpjekur të dilni... "
+echo -e ${RED}" [*] Ndalimi i shërbimeve... "
 sleep 1
 echo ""
-echo -e ${YELLOW}" [*] Thanks For Using Fake-SMS  :)"
+echo -e ${YELLOW}" [*] Faleminderit për përdorimi FAKE-SMS  :)"
 exit
 }
 
@@ -175,11 +171,11 @@ clear
 banner
 
 
-echo -e " \n ${RED}[${NC}01${RED}]${BLUE} SEE USAGE "
-echo -e " ${RED}[${NC}02${RED}]${BLUE} Send Fake SMS"
-echo -e " ${RED}[${NC}03${RED}]${BLUE} CHECK SMS STATUS "
-echo -e " ${RED}[${NC}04${RED}]${BLUE} EXIT "
-echo -n -e ${RED}"\n [${GREEN}+${RED}] ${GREEN}Select:${NC} "
+echo -e " \n ${RED}[${NC}01${RED}]${BLUE} SHIKO PËRDORIMIN "
+echo -e " ${RED}[${NC}02${RED}]${BLUE} DERGO NJE SMS"
+echo -e " ${RED}[${NC}03${RED}]${BLUE} SHIKO STATUSIN E SMS "
+echo -e " ${RED}[${NC}04${RED}]${BLUE} DIL "
+echo -n -e ${RED}"\n [${GREEN}+${RED}] ${GREEN}ZGJEDH:${NC} "
 read play
    if [ $play -eq 1 ]; then
           instruction
@@ -193,4 +189,3 @@ read play
       fi
 }
 menu
-#coded by k46_db0y Don't copy this code without giving me credit.
